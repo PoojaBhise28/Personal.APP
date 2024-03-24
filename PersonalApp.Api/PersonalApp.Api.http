@@ -1,0 +1,43 @@
+@PersonalApp.Api_HostAddress = http://localhost:5039
+
+GET {{PersonalApp.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{PersonalApp.Api_HostAddress}}/api/person
+
+###
+
+POST {{PersonalApp.Api_HostAddress}}/api/person
+Content-Type: application/json
+
+{
+  "firstName":"shubham",
+  "mobileNumber":"6758489309",
+  "lastName":"patil",
+  "phoneNumber":"3434343434",
+  "description":"heyy "
+
+
+}
+
+###
+
+PUT {{PersonalApp.Api_HostAddress}}/api/person/2
+Content-Type: application/json
+
+{
+  "firstName":"shubham",
+  "mobileNumber":"1231231231",
+  "lastName":"patil",
+  "phoneNumber":"9090909090",
+  "description":"heyy "
+
+}
+
+###
+
+DELETE {{PersonalApp.Api_HostAddress}}/api/person/4
+
+###
