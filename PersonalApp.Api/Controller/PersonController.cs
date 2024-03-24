@@ -10,9 +10,9 @@ namespace PersonalApp.Api.Controller
     [ApiController]
     public class PersonController : ControllerBase
     {
-
+        //controller of try catch
         private readonly IPersonService _personService ;
-
+     
         public PersonController(IPersonService personService)
         {
             _personService = personService ;
